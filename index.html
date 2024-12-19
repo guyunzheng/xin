@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多个视频示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-gallery video {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .video-gallery video:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>多个视频示例</h1>
+    </header>
+    <main>
+        <div class="video-gallery">
+            <!-- 视频 1 -->
+            <video controls>
+                <source src="./img/1.mp4" type="video/mp4">
+                您的浏览器不支持HTML5视频标签。
+            </video>
+
+            <!-- 视频 2 -->
+            <video controls>
+                <source src="video/video2.mp4" type="video/mp4">
+                您的浏览器不支持HTML5视频标签。
+            </video>
+
+            <!-- 视频 3 -->
+            <video controls>
+                <source src="video/video3.mp4" type="video/mp4">
+                您的浏览器不支持HTML5视频标签。
+            </video>
+
+            <!-- 视频 4 -->
+            <video controls>
+                <source src="video/video4.mp4" type="video/mp4">
+                您的浏览器不支持HTML5视频标签。
+            </video>
+        </div>
+    </main>
+</body>
+</html>
